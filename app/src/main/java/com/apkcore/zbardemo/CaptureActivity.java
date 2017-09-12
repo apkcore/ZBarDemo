@@ -89,11 +89,11 @@ public class CaptureActivity extends Activity {
 		mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
 		scanPreview.addView(mPreview);
 
-		TranslateAnimation animation = new TranslateAnimation(Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT,
-				0.85f);
+		TranslateAnimation animation = new TranslateAnimation(Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, 0.0f, Animation.RELATIVE_TO_PARENT, -1f, Animation.RELATIVE_TO_PARENT,
+				0.0f);
 		animation.setDuration(3000);
 		animation.setRepeatCount(-1);
-		animation.setRepeatMode(Animation.REVERSE);
+		animation.setRepeatMode(Animation.RESTART);
 		scanLine.startAnimation(animation);
 	}
 

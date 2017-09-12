@@ -27,16 +27,14 @@
             android:layout_height="200dp"
             android:layout_below="@id/capture_mask_top"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/qr_code_bg">
+            android:background="@mipmap/face_scan_rect_blue">
 
             <ImageView
                 android:id="@+id/capture_scan_line"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:src="@mipmap/scan_line"/>
+                android:src="@mipmap/scan_ray"/>
         </RelativeLayout>
 
         <ImageView
